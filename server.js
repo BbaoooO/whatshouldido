@@ -55,3 +55,5 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Backend Proxy đang chạy tại http://localhost:${PORT}`);
 });
+// Cuối file server.js, ngay dưới khối lệnh app.listen(...)
+module.exports = app;
