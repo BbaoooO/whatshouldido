@@ -10,8 +10,8 @@ app.use(express.json());
 app.post('/api/chat', async (req, res) => {
     const { messages, isPremium } = req.body; 
 
-    const tokenLimit = isPremium ? 800 : 300; 
-    const wordLimit = isPremium ? 500 : 200;
+    const tokenLimit = isPremium ? 700 : 300; 
+    const wordLimit = isPremium ? 400 : 200;
 
     // Chuyển instruction sang tiếng Anh để AI trung lập về ngôn ngữ
     const roleInstruction = isPremium 
